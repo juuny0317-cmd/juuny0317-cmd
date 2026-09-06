@@ -41,7 +41,7 @@ A safety-oriented ROS 2 driving stack combining dual-antenna RTK GNSS, route tra
 
 ---
 
-### Kookmin Autonomous Driving Competition · Xycar
+### [Kookmin Autonomous Driving Competition · Xycar](https://github.com/juuny0317-cmd/Kookmin2026)
 
 ![Status](https://img.shields.io/badge/STATUS-IN_PROGRESS-ff7a00?style=flat-square&labelColor=0d1117)
 
