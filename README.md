@@ -83,9 +83,18 @@ Sensors  →  Perception  →  Decision & Planning  →  Control  →  Vehicle
 
 ## Productive Hours
 
-My commit-time distribution is updated automatically every day with [productive-box](https://github.com/maxam2017/productive-box). The live card is available in the pinned gist on my profile.
+My commit-time distribution is updated automatically every day with [productive-box](https://github.com/maxam2017/productive-box).
 
 [View the live productive-hours gist](https://gist.github.com/juuny0317-cmd/51f1f0869c5ea98d17f55e17ecc7d1e5)
+
+<!-- productive-box:start -->
+```text
+🌞 Morning     0 commits  ░░░░░░░░░░░░░░░░░░░░░   0.0%
+🌆 Daytime     0 commits  ░░░░░░░░░░░░░░░░░░░░░   0.0%
+🌃 Evening     0 commits  ░░░░░░░░░░░░░░░░░░░░░   0.0%
+🌙 Night       3 commits  █████████████████████ 100.0%
+```
+<!-- productive-box:end -->
 
 <p align="center">
   <sub><span style="color:#ff7a00">Build. Measure. Improve.</span></sub>

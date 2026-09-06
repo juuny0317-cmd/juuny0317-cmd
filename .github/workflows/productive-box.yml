@@ -6,15 +6,38 @@ on:
     - cron: "0 0 * * *"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
       - name: Update productive hours
         uses: maxam2017/productive-box@master
         env:
           GH_TOKEN: ${{ secrets.PRODUCTIVE_BOX_TOKEN }}
           GIST_ID: ${{ secrets.PRODUCTIVE_BOX_GIST_ID }}
           TIMEZONE: ${{ vars.TIMEZONE }}
+
+      - name: Fetch the updated gist
+        env:
+          GH_TOKEN: ${{ secrets.PRODUCTIVE_BOX_TOKEN }}
+          GIST_ID: ${{ secrets.PRODUCTIVE_BOX_GIST_ID }}
+        run: gh gist view "$GIST_ID" --raw > /tmp/productive-hours.txt
+
+      - name: Update the profile README
+        run: python3 .github/scripts/update_productive_hours.py /tmp/productive-hours.txt README.md
+
+      - name: Commit README when statistics changed
+        run: |
+          if git diff --quiet -- README.md; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update productive hours"
+          git push
