@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">YongJun — Autonomous Mobility</title>
+  <desc id="desc">Dark black and orange profile banner inspired by an autonomous driving track and electronic signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.62" stop-color="#0d0d0d"/>
+      <stop offset="1" stop-color="#1c0d03"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a00"/>
+      <stop offset="1" stop-color="#ff9d2e"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
+  <path d="M0 255C205 184 285 278 455 214S760 112 1200 226" fill="none" stroke="#ff7a00" stroke-opacity="0.16" stroke-width="54"/>
+  <path d="M0 255C205 184 285 278 455 214S760 112 1200 226" fill="none" stroke="url(#orange)" stroke-width="3" filter="url(#glow)"/>
+  <path d="M0 276C214 210 303 296 468 238S780 142 1200 247" fill="none" stroke="#ff9d2e" stroke-opacity="0.42" stroke-width="2" stroke-dasharray="16 22"/>
+  <g fill="none" stroke="#ff7a00" stroke-opacity="0.6">
+    <path d="M934 42h95l18 18h116"/>
+    <path d="M976 78h84l15 15h88"/>
+    <circle cx="927" cy="42" r="5" fill="#ff7a00"/>
+    <circle cx="969" cy="78" r="5" fill="#ff7a00"/>
+    <circle cx="1163" cy="60" r="4" fill="#ff7a00"/>
+    <circle cx="1163" cy="93" r="4" fill="#ff7a00"/>
+  </g>
+  <text x="74" y="112" fill="#ff7a00" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" letter-spacing="4">AUTONOMOUS MOBILITY</text>
+  <text x="70" y="177" fill="#f5f5f5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="61" font-weight="750" letter-spacing="-1">YongJun</text>
+  <text x="74" y="218" fill="#a6a6a6" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22">ROS 2  ·  Planning  ·  Simulation  ·  Embedded Systems</text>
+  <g transform="translate(1002 142)" fill="none" stroke="#ff7a00" stroke-width="5" filter="url(#glow)">
+    <path d="M0 75h145l-13-35-27-18H42L17 40Z"/>
+    <circle cx="35" cy="76" r="18"/>
+    <circle cx="113" cy="76" r="18"/>
+    <path d="M49 22 67 2h34l16 20M60 40h43" stroke-width="3"/>
+  </g>
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="22.5" fill="none" stroke="#ff7a00" stroke-opacity="0.22" stroke-width="3"/>
+</svg>
