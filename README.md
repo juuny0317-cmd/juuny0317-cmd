@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="YongJun — Autonomous Mobility" />
+  <img src="assets/header.svg" width="100%" alt="welcome to YongJun's github" />
 </p>
 
 <p align="center">

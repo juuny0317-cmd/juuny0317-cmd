@@ -1,45 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
-  <title id="title">YongJun — Autonomous Mobility</title>
-  <desc id="desc">Dark black and orange profile banner inspired by an autonomous driving track and electronic signals.</desc>
+  <title id="title">welcome to YongJun's github</title>
+  <desc id="desc">검정과 주황색으로 구성한 자율주행 경로 설계 배너</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#050505"/>
-      <stop offset="0.62" stop-color="#0d0d0d"/>
-      <stop offset="1" stop-color="#1c0d03"/>
+      <stop offset="0.7" stop-color="#0b0b0b"/>
+      <stop offset="1" stop-color="#160a02"/>
     </linearGradient>
-    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff7a00"/>
-      <stop offset="1" stop-color="#ff9d2e"/>
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
     </pattern>
+    <pattern id="minor-grid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M8 0H0V8" fill="none" stroke="#ff7a00" stroke-opacity="0.018"/>
+    </pattern>
+    <linearGradient id="fade-orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a00" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#ff7a00" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ff9b32" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="1200" height="320" rx="24"/>
+    </clipPath>
   </defs>
-  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
-  <path d="M0 255C205 184 285 278 455 214S760 112 1200 226" fill="none" stroke="#ff7a00" stroke-opacity="0.16" stroke-width="54"/>
-  <path d="M0 255C205 184 285 278 455 214S760 112 1200 226" fill="none" stroke="url(#orange)" stroke-width="3" filter="url(#glow)"/>
-  <path d="M0 276C214 210 303 296 468 238S780 142 1200 247" fill="none" stroke="#ff9d2e" stroke-opacity="0.42" stroke-width="2" stroke-dasharray="16 22"/>
-  <g fill="none" stroke="#ff7a00" stroke-opacity="0.6">
-    <path d="M934 42h95l18 18h116"/>
-    <path d="M976 78h84l15 15h88"/>
-    <circle cx="927" cy="42" r="5" fill="#ff7a00"/>
-    <circle cx="969" cy="78" r="5" fill="#ff7a00"/>
-    <circle cx="1163" cy="60" r="4" fill="#ff7a00"/>
-    <circle cx="1163" cy="93" r="4" fill="#ff7a00"/>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#background)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect x="720" width="480" height="320" fill="url(#minor-grid)"/>
+
+    <!-- Measured road boundaries and center line -->
+    <path d="M-50 285C155 235 330 273 498 238C628 211 712 169 822 147C954 120 1070 134 1245 84"
+          fill="none" stroke="#8a8a8a" stroke-opacity="0.2" stroke-width="48"/>
+    <path d="M-50 261C150 213 323 251 491 216C620 189 704 147 817 124C950 97 1068 111 1245 61"
+          fill="none" stroke="#f0f0f0" stroke-opacity="0.2" stroke-width="1.5"/>
+    <path d="M-50 309C160 257 336 296 505 261C638 233 720 191 827 170C957 144 1072 157 1245 107"
+          fill="none" stroke="#f0f0f0" stroke-opacity="0.2" stroke-width="1.5"/>
+    <path d="M-50 285C155 235 330 273 498 238C628 211 712 169 822 147C954 120 1070 134 1245 84"
+          fill="none" stroke="#ff7a00" stroke-opacity="0.65" stroke-width="2" stroke-dasharray="14 17"/>
+
+    <!-- Planned trajectory with sampled waypoints -->
+    <path d="M690 244C756 221 789 179 837 151C884 124 924 112 976 103C1028 94 1086 99 1162 78"
+          fill="none" stroke="url(#fade-orange)" stroke-width="3"/>
+    <g fill="#ff7a00">
+      <circle cx="756" cy="216" r="3"/>
+      <circle cx="806" cy="173" r="3"/>
+      <circle cx="857" cy="139" r="3"/>
+      <circle cx="914" cy="117" r="3"/>
+      <circle cx="976" cy="103" r="3"/>
+      <circle cx="1040" cy="98" r="3"/>
+      <circle cx="1104" cy="91" r="3"/>
+      <circle cx="1162" cy="78" r="4"/>
+    </g>
+
+    <!-- Sensor field and top-view vehicle -->
+    <g transform="translate(950 176) rotate(-10)" fill="none">
+      <path d="M0-44L-128-145M0-44L128-145M0-44L0-174" stroke="#ff7a00" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="5 7"/>
+      <path d="M-77-105A130 130 0 0 1 77-105" stroke="#ff7a00" stroke-opacity="0.25" stroke-width="1.5"/>
+      <path d="M-103-126A165 165 0 0 1 103-126" stroke="#ff7a00" stroke-opacity="0.12" stroke-width="1"/>
+      <circle cx="0" cy="-44" r="28" stroke="#ff7a00" stroke-opacity="0.15"/>
+      <circle cx="0" cy="-44" r="45" stroke="#ff7a00" stroke-opacity="0.1"/>
+
+      <rect x="-38" y="-68" width="76" height="136" rx="25" fill="#090909" stroke="#ff7a00" stroke-width="2.5"/>
+      <path d="M-27-25L-18-48H18L27-25M-27 24L-18 48H18L27 24" stroke="#ff9b32" stroke-opacity="0.7" stroke-width="1.5"/>
+      <path d="M-26-16H26M-26 16H26" stroke="#ff7a00" stroke-opacity="0.35"/>
+      <circle cx="0" cy="-42" r="5" fill="#ff7a00" stroke="none"/>
+      <path d="M-48-43H-37M37-43H48M-48 43H-37M37 43H48" stroke="#d6d6d6" stroke-opacity="0.55" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <!-- Header copy -->
+    <path d="M70 91H112" stroke="#ff7a00" stroke-width="4"/>
+    <text x="70" y="158" fill="#f2f2f2"
+          font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="45" font-weight="650" letter-spacing="-0.8">welcome to YongJun's github</text>
+    <path d="M70 184H570" stroke="#ff7a00" stroke-opacity="0.48" stroke-width="1"/>
+    <circle cx="70" cy="184" r="3.5" fill="#ff7a00"/>
+    <circle cx="570" cy="184" r="3.5" fill="#ff7a00"/>
   </g>
-  <text x="74" y="112" fill="#ff7a00" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" letter-spacing="4">AUTONOMOUS MOBILITY</text>
-  <text x="70" y="177" fill="#f5f5f5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="61" font-weight="750" letter-spacing="-1">YongJun</text>
-  <text x="74" y="218" fill="#a6a6a6" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22">ROS 2  ·  Planning  ·  Simulation  ·  Embedded Systems</text>
-  <g transform="translate(1002 142)" fill="none" stroke="#ff7a00" stroke-width="5" filter="url(#glow)">
-    <path d="M0 75h145l-13-35-27-18H42L17 40Z"/>
-    <circle cx="35" cy="76" r="18"/>
-    <circle cx="113" cy="76" r="18"/>
-    <path d="M49 22 67 2h34l16 20M60 40h43" stroke-width="3"/>
-  </g>
-  <rect x="1.5" y="1.5" width="1197" height="317" rx="22.5" fill="none" stroke="#ff7a00" stroke-opacity="0.22" stroke-width="3"/>
+
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="22.5" fill="none" stroke="#ff7a00" stroke-opacity="0.28" stroke-width="3"/>
 </svg>
