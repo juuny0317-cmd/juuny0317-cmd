@@ -43,9 +43,10 @@ A safety-oriented ROS 2 driving stack combining dual-antenna RTK GNSS, route tra
 
 ### [Kookmin Autonomous Driving Competition · Xycar](https://github.com/juuny0317-cmd/Kookmin2026)
 
-![Status](https://img.shields.io/badge/STATUS-IN_PROGRESS-ff7a00?style=flat-square&labelColor=0d1117)
+![Status](https://img.shields.io/badge/STATUS-COMPLETED-2ea043?style=flat-square&labelColor=0d1117)
+![Result](https://img.shields.io/badge/RESULT-7TH_OF_132_TEAMS-0969da?style=flat-square&labelColor=0d1117)
 
-An Xycar project connecting a measured-data-based Ackermann vehicle simulation with camera, LiDAR, and lane-driving software through hardware-compatible ROS 2 interfaces.
+A completed Xycar autonomous-driving project that placed **7th overall out of 132 teams** after advancing to the 22-team main round. It connected measured-data-based Ackermann simulation with camera, LiDAR, and lane-driving software through hardware-compatible ROS 2 interfaces.
 
 `Xycar` `Ackermann Steering` `Camera` `LiDAR` `Lane Driving` `Gazebo`
 
