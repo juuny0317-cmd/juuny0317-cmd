@@ -19,6 +19,12 @@
 
 I am interested in autonomous-driving software that connects planning algorithms, vehicle simulation, sensors, and embedded hardware. My current work covers behavior and motion planning, vehicle interfaces, RTK GNSS, CAN communication, simulation, and edge AI.
 
+## Academic Portfolio
+
+[**Visit my academic portfolio →**](https://juuny0317-cmd.github.io/)
+
+Research interests, selected projects, and detailed engineering case studies in autonomous driving and robotics.
+
 ## 2026 Competition Projects
 
 ### KAI2026 · KAI Creative Mobility Competition
