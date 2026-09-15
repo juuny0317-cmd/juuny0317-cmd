@@ -4,8 +4,7 @@
 
 <p align="center">
   <strong>건국대학교 스마트운행체공학과 2학년</strong><br/>
-  Learning by building autonomous vehicles with ROS 2, simulation, and embedded systems.<br/>
-  <a href="mailto:yongjunyu0317@gmail.com">yongjunyu0317@gmail.com</a> · <a href="tel:+821083418583">010-8341-8583</a>
+  Learning by building autonomous vehicles with ROS 2, simulation, and embedded systems.
 </p>
 
 <p align="center">
