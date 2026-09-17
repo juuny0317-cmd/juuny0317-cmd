@@ -81,12 +81,22 @@ Sensors  →  Perception  →  Decision & Planning  →  Control  →  Vehicle
 - CAN and serial communication between Linux computers and embedded controllers
 - Reproducible testing and documentation for competition systems
 
-## GitHub Activity
+## Study & Project Activities
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=juuny0317-cmd&show_icons=true&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=ff7a00&icon_color=ff7a00&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="YongJun's GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=juuny0317-cmd&layout=compact&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=ff7a00&text_color=c9d1d9" alt="Most used languages" />
-</p>
+Coursework, self-directed study, conferences, and implementation projects that turn what I learn into working results.
+
+### [2026 Mobility AI Startup Conference · PromptDeck Studio](https://juuny0317-cmd.github.io/YJ_HTML/)
+
+![Status](https://img.shields.io/badge/STATUS-COMPLETED-2ea043?style=flat-square&labelColor=0d1117)
+![Award](https://img.shields.io/badge/AWARD-BEST_AWARD-f2cc60?style=flat-square&labelColor=0d1117)
+
+Built a Korean web workspace that converts natural-language requirements into reusable Markdown work specifications for presentations, reports, and coding tasks. It supports Markdown import, structured feedback, browser-based review, and direct GitHub Pages access.
+
+**Award: 최우수상 수상**
+
+[Live Workspace](https://juuny0317-cmd.github.io/YJ_HTML/) · [Source Code](https://github.com/juuny0317-cmd/YJ_HTML)
+
+`Next.js` `TypeScript` `HTML/CSS` `Markdown` `GitHub Pages`
 
 ## Productive Hours
 
