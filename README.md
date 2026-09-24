@@ -37,13 +37,15 @@ An in-progress autonomous mobility project integrating ROS 2 Humble, Gazebo Harm
 
 ---
 
-### [HL FMA 2026 · 1/5-Scale Autonomous Vehicle](https://github.com/yunny22/HL_KU)
+### [HL FMA 2026 · 1/5-Scale Autonomous Vehicle](https://github.com/juuny0317-cmd/HL_FMA_2026)
 
-![Status](https://img.shields.io/badge/STATUS-IN_PROGRESS-ff7a00?style=flat-square&labelColor=0d1117)
+![Status](https://img.shields.io/badge/STATUS-COMPLETED-2ea043?style=flat-square&labelColor=0d1117)
 
-A safety-oriented ROS 2 driving stack combining dual-antenna RTK GNSS, route tracking, mission management, speed and steering control, and a NUCLEO-H743ZI2 interface.
+A completed 1/5-scale autonomous-vehicle project integrating dual-antenna RTK GNSS, camera/LiDAR perception, mission-tagged routes, Stanley tracking, safety supervision, and a NUCLEO-H723ZG vehicle interface.
 
-`RTK GNSS` `Path Tracking` `Safety Supervisor` `ROS 2` `NUCLEO-H743ZI2`
+[`Project Details`](https://juuny0317-cmd.github.io/projects/hl-fma2026/) · [`Source Code`](https://github.com/juuny0317-cmd/HL_FMA_2026)
+
+`RTK GNSS` `Camera` `LiDAR` `Stanley` `Safety Supervisor` `ROS 2` `NUCLEO-H723ZG`
 
 ---
 
