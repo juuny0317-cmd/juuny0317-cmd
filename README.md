@@ -40,8 +40,9 @@ An in-progress autonomous mobility project integrating ROS 2 Humble, Gazebo Harm
 ### [HL FMA 2026 · 1/5-Scale Autonomous Vehicle](https://github.com/juuny0317-cmd/HL_FMA_2026)
 
 ![Status](https://img.shields.io/badge/STATUS-COMPLETED-2ea043?style=flat-square&labelColor=0d1117)
+![Result](https://img.shields.io/badge/RESULT-ENCOURAGEMENT_AWARD-0969da?style=flat-square&labelColor=0d1117)
 
-A completed 1/5-scale autonomous-vehicle project integrating dual-antenna RTK GNSS, camera/LiDAR perception, mission-tagged routes, Stanley tracking, safety supervision, and a NUCLEO-H723ZG vehicle interface.
+A completed 1/5-scale autonomous-vehicle project that received an **Encouragement Award**, integrating dual-antenna RTK GNSS, camera/LiDAR perception, mission-tagged routes, Stanley tracking, safety supervision, and a NUCLEO-H723ZG vehicle interface.
 
 [`Project Details`](https://juuny0317-cmd.github.io/projects/hl-fma2026/) · [`Source Code`](https://github.com/juuny0317-cmd/HL_FMA_2026)
 
