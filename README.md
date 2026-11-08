@@ -65,9 +65,15 @@ A completed Xycar autonomous-driving project that placed **7th overall out of 13
 
 ![Status](https://img.shields.io/badge/STATUS-COMPLETED-2ea043?style=flat-square&labelColor=0d1117)
 
-A completed multimodal driver-assistance system connecting Jetson perception, audio recognition, STM32 CAN vehicle data, and Raspberry Pi fusion, Rule/XGBoost risk assessment, and HMI/TTS through CycloneDDS. My role focused on audio recognition model development.
+A completed multimodal driver-assistance system connecting Jetson perception, audio recognition, STM32 CAN vehicle data, and Raspberry Pi fusion, Rule/XGBoost risk assessment, and HMI/TTS through CycloneDDS. My contributions covered audio recognition, end-to-end latency improvement, rule-based risk logic and FSM adoption, test scenario implementation, and cost-conscious task allocation between Jetson and Raspberry Pi.
 
-[![CODRIVE final integrated demonstration with CARLA, G29, CAN and HMI](https://raw.githubusercontent.com/juuny0317-cmd/2026ESWContest_mobility_CODRIVE/main/docs/portfolio/integrated-demo.jpg)](https://juuny0317-cmd.github.io/projects/codrive/)
+**My contributions**
+
+- **Audio recognition:** prepared sound data and features, trained and evaluated siren/horn recognition models, and improved inference performance.
+- **Latency improvement:** improved the final warning pipeline to reduce end-to-end latency.
+- **Rule-based logic & FSM:** introduced explicit risk rules and state transitions for warning priority and stable behavior.
+- **Scenario implementation:** implemented compound-risk test scenarios for integrated validation.
+- **Hardware task allocation:** balanced cost and compute requirements by assigning perception to Jetson and fusion, risk assessment, and HMI to Raspberry Pi.
 
 Team-reported validation: **186ms average end-to-end latency · approximately 300ms P95 · 87% of alerts within 200ms across 100 trials**. Initial audio model: **89.60% siren F1** on 3,044 held-out validation samples.
 
